@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Widgets/CpuFreqGraphWidget.h</itemPath>
+      <itemPath>Providers/CpuFreqProvider.h</itemPath>
+      <itemPath>Widgets/CpuGraphWidget.h</itemPath>
+      <itemPath>Providers/CpuProvider.h</itemPath>
+      <itemPath>DataEngine/Data.h</itemPath>
+      <itemPath>DataEngine/DataSource.h</itemPath>
+      <itemPath>Providers/GpuFreqProvider.h</itemPath>
+      <itemPath>Providers/GpuProvider.h</itemPath>
+      <itemPath>Providers/GpuRamFreqProvider.h</itemPath>
+      <itemPath>Widgets/GraphWidget.h</itemPath>
+      <itemPath>DataEngine/Id.h</itemPath>
+      <itemPath>MainForm.h</itemPath>
+      <itemPath>Providers/Provider.h</itemPath>
+      <itemPath>Widgets/RamGraphWidget.h</itemPath>
+      <itemPath>Providers/RamProvider.h</itemPath>
+      <itemPath>Providers/newClass.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>MainForm.ui</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Widgets/CpuFreqGraphWidget.cpp</itemPath>
+      <itemPath>Providers/CpuFreqProvider.cpp</itemPath>
+      <itemPath>Widgets/CpuGraphWidget.cpp</itemPath>
+      <itemPath>Providers/CpuProvider.cpp</itemPath>
+      <itemPath>DataEngine/Data.cpp</itemPath>
+      <itemPath>DataEngine/DataSource.cpp</itemPath>
+      <itemPath>Providers/GpuFreqProvider.cpp</itemPath>
+      <itemPath>Providers/GpuProvider.cpp</itemPath>
+      <itemPath>Providers/GpuRamFreqProvider.cpp</itemPath>
+      <itemPath>Widgets/GraphWidget.cpp</itemPath>
+      <itemPath>DataEngine/Id.cpp</itemPath>
+      <itemPath>MainForm.cpp</itemPath>
+      <itemPath>Providers/Provider.cpp</itemPath>
+      <itemPath>Widgets/RamGraphWidget.cpp</itemPath>
+      <itemPath>Providers/RamProvider.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>Providers/newClass.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>DataEngine</pElem>
+            <pElem>Providers</pElem>
+            <pElem>Widgets</pElem>
+          </incDir>
+        </ccTool>
+      </compileType>
+      <item path="DataEngine/Data.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataEngine/Data.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataEngine/DataSource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataEngine/DataSource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataEngine/Id.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataEngine/Id.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MainForm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MainForm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MainForm.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/CpuFreqProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/CpuFreqProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/CpuProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/CpuProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/GpuFreqProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/GpuFreqProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/GpuProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/GpuProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/GpuRamFreqProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/GpuRamFreqProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/Provider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/Provider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/RamProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/RamProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/newClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/newClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Widgets/CpuFreqGraphWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Widgets/CpuFreqGraphWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Widgets/CpuGraphWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Widgets/CpuGraphWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Widgets/GraphWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Widgets/GraphWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Widgets/RamGraphWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Widgets/RamGraphWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <buildMode>1</buildMode>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="DataEngine/Data.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataEngine/Data.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataEngine/DataSource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataEngine/DataSource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DataEngine/Id.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DataEngine/Id.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MainForm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MainForm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MainForm.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/CpuFreqProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/CpuFreqProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/CpuProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/CpuProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/GpuFreqProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/GpuFreqProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/GpuProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/GpuProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/GpuRamFreqProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/GpuRamFreqProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/Provider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/Provider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/RamProvider.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/RamProvider.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Providers/newClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Providers/newClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Widgets/CpuFreqGraphWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Widgets/CpuFreqGraphWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Widgets/CpuGraphWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Widgets/CpuGraphWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Widgets/GraphWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Widgets/GraphWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Widgets/RamGraphWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Widgets/RamGraphWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
