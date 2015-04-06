@@ -17,7 +17,7 @@
 class GraphWidget : public QWidget {
     Q_OBJECT
         public:
-            const static float textRectWidth = 100.0;
+            const static float textRectPlusWidth = 6.0;
     const static float textRectHeight = 20.0;
     const static float textRectCurve = 2.0;
     const static float textRectFromBottom = 30.0;

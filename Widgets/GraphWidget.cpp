@@ -52,12 +52,15 @@ void GraphWidget::paintEvent(QPaintEvent*) {
         blacktrans.setAlpha(100);
         painter.setBrush(blacktrans);
         painter.setPen(blacktrans);
-        painter.drawRoundedRect(w / 2 - textRectWidth / 2, h - textRectFromBottom,
-                textRectWidth, textRectHeight, textRectCurve, textRectCurve);
+        float textwidth = textRectPlusWidth;
+        if (data)
+            textwidth += painter.fontMetrics().width(getText(data->getLastAdded()));
+        painter.drawRoundedRect(w / 2 - textwidth / 2, h - textRectFromBottom,
+                textwidth, textRectHeight, textRectCurve, textRectCurve);
 
         painter.setPen(Qt::lightGray); //Drawing the usage into the black rectangle
-        if (data) painter.drawText(w / 2 - textRectWidth / 2,
-                h - textRectFromBottom, textRectWidth, textRectHeight,
+        if (data) painter.drawText(w / 2 - textwidth / 2,
+                h - textRectFromBottom, textwidth, textRectHeight,
                 Qt::AlignCenter, getText(data->getLastAdded()), 0);
     }
 
