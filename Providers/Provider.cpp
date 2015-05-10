@@ -6,13 +6,3 @@
  */
 
 #include "Provider.h"
-
-Provider::Provider() {
-}
-
-Provider::Provider(const Provider& orig) {
-}
-
-Provider::~Provider() {
-}
-

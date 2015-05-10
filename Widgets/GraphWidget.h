@@ -26,31 +26,42 @@ class GraphWidget : public QWidget {
     const static float textMinHeight = 40.0;
 
     explicit GraphWidget(QWidget *parent = 0);
-    GraphWidget(Id id,QColor c, float divider = 1);
+    GraphWidget(Id id, QColor c, float divider = 1);
     GraphWidget(const GraphWidget& orig);
 
     ~GraphWidget() {
 
     }
 
+    /**
+     * @param data Data to GraphWidget
+     */
     void setData(const Data *data) {
         this->data = data;
         data->resetIterator();
     }
 
+    /**
+     * @return GraphWidget's id
+     */
     const Id getId() const {
         return id;
     }
 protected:
     void paintEvent(QPaintEvent*);
-    virtual QString getText(float data) = 0;    
+    /**
+     * Defined in custom classes for data types
+     * @param data Data to make string from
+     * @return Custom formatted string for data type
+     */
+    virtual QString getText(float data) = 0;
     const Id id;
 
 private:
-    const QColor color; //Color of the graph
-    const float divider; //Data is being divided by that for drawing
-    const Data *data;
-    void parseData(int i);
+    const QColor color; //<Color of the graph
+    const float divider; //<Data is being divided by that for drawing
+    const Data *data; //<Data to read from
+    void parseData(int i); 
 };
 
 #endif	/* GRAPHWIDGET_H */

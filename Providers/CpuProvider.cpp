@@ -15,6 +15,10 @@
 #include <unistd.h>
 #include <QDebug>
 
+/**
+ * Implementation of Provider interface
+ * @param data Data to update
+ */
 void CpuProvider::update(Data *data) {
     if (id->GetPrimary() == DataSource::CPUSUM) {
         data->update(getUsage());
@@ -23,6 +27,9 @@ void CpuProvider::update(Data *data) {
     }
 }
 
+/**
+ * @param core Core id (use -1 for summarized)
+ */
 CpuProvider::CpuProvider(int core) {
     if (core == -1) {
         id = new Id(DataSource::CPUSUM);
@@ -34,7 +41,6 @@ CpuProvider::CpuProvider(int core) {
 }
 
 /**
- * Returns usage of cpu summarized or by cores
  * @param linenum 0th line is sum, 1st is cpu0, 2nd cpu1 etc.
  * @return CPU usage (1 means 100%, 0 means 0%)
  */
@@ -44,7 +50,7 @@ float CpuProvider::getUsage(int linenum) {
 
     if (!infile.is_open()) {
         perror("/proc/stat cannot be opened");
-        QApplication::exit(1);
+        return 0;
     }
 
     for (std::string line; getline(infile, line) && linenum >= 0; linenum--) {
@@ -73,8 +79,7 @@ float CpuProvider::getUsage(int linenum) {
 }
 
 /**
- * Returns number of cpu threads (with HT 2*cores)
- * @return 
+ * @return Number of cpu threads (with HT corenum*2)
  */
 int CpuProvider::getNumberOfCores() {
     return sysconf(_SC_NPROCESSORS_ONLN);

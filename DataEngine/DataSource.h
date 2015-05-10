@@ -38,8 +38,8 @@ public:
     bool exportToCsv(string filename);
     void update();
 private:
-    vector<Data> store;
-    vector<Provider*> providers;
+    vector<Data> store; //<Vector that stores Data elements
+    vector<Provider*> providers; //<Store of Providers
     bool addData(Id id);
     Data* getDataPrivate(const Id& id, bool create = false);
 };

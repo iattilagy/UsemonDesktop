@@ -11,11 +11,16 @@
 #include "Id.h"
 #include "Data.h"
 
+/**
+ * Interface to update Data's
+ */
 class Provider {
 public:
-    Provider();
-    Provider(const Provider& orig);
-    virtual ~Provider();
+    virtual ~Provider() {};
+    /**
+     * Updates the given Data
+     * @param data
+     */
     virtual void update(Data* data) = 0;
 
     const Id getId() {

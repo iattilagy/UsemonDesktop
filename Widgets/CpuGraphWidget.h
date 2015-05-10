@@ -10,6 +10,9 @@
 
 #include "GraphWidget.h"
 
+/**
+ * Also works as GpuGraphWidget
+ */
 class CpuGraphWidget : public GraphWidget {
     Q_OBJECT
 public:

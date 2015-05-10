@@ -7,28 +7,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/GraphWidget.cpp</file>
             <file>file:/home/attila/NetBeansProjects/Usemon/MainForm.cpp</file>
+            <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/GraphWidget.cpp</file>
             <file>file:/home/attila/NetBeansProjects/Usemon/DataEngine/DataSource.h</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/RamGraphWidget.cpp</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/DataEngine/Id.cpp</file>
             <file>file:/home/attila/NetBeansProjects/Usemon/Providers/CpuProvider.cpp</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/GraphWidget.h</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/DataEngine/Data.h</file>
+            <file>file:/home/attila/NetBeansProjects/Usemon/DataEngine/Id.cpp</file>
             <file>file:/home/attila/NetBeansProjects/Usemon/DataEngine/DataSource.cpp</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/CpuFreqGraphWidget.h</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/ui_MainForm.h</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/CpuFreqGraphWidget.cpp</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/Providers/CpuFreqProvider.cpp</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/DataEngine/Id.h</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/RamGraphWidget.h</file>
+            <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/GraphWidget.h</file>
+            <file>file:/home/attila/NetBeansProjects/Usemon/Providers/GpuProvider.h</file>
             <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/CpuGraphWidget.h</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/Providers/CpuFreqProvider.h</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/MainForm.h</file>
-            <file>file:/home/attila/NetBeansProjects/Usemon/DataEngine/Data.cpp</file>
+            <file>file:/home/attila/NetBeansProjects/Usemon/Providers/RamProvider.h</file>
             <file>file:/home/attila/NetBeansProjects/Usemon/Widgets/CpuGraphWidget.cpp</file>
             <file>file:/home/attila/NetBeansProjects/Usemon/Providers/CpuProvider.h</file>
             <file>file:/home/attila/NetBeansProjects/Usemon/Providers/RamProvider.cpp</file>
+            <file>file:/home/attila/NetBeansProjects/Usemon/Providers/GpuProvider.cpp</file>
         </group>
     </open-files>
 </project-private>

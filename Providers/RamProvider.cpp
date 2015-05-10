@@ -18,6 +18,9 @@ RamProvider::RamProvider() {
     id = new Id(DataSource::RAM);
 }
 
+/**
+ * @param data Data to update
+ */
 void RamProvider::update(Data* data) {
     ifstream infile("/proc/meminfo");
     

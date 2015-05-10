@@ -11,10 +11,18 @@
 
 #include <QColor>
 
+/**
+ * @param id Data type
+ * @param c Graph color
+ */
 CpuFreqGraphWidget::CpuFreqGraphWidget(Id id, QColor c)
 : GraphWidget(id, c, CpuFreqProvider::getMaxFreq()) {
 }
 
+/**
+ * @param data Current value
+ * @return String for graphwidget
+ */
 QString CpuFreqGraphWidget::getText(float data) {
     QString temp = "";
     temp.sprintf("cpu%d: %dMhz", id.GetSecondary(), int(data));

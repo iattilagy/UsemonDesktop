@@ -14,11 +14,21 @@
 #include "CpuGraphWidget.h"
 #include "CpuFreqGraphWidget.h"
 #include "RamGraphWidget.h"
+#include "GpuProvider.h"
 #include <QDebug>
 
+/**
+ * Sets up the layout
+ */
 MainForm::MainForm() {
     widget.setupUi(this);
     GraphWidget *g = new CpuGraphWidget(DataSource::CPUSUM, QColor(0xFF, 0x98, 0x08, 0xff));
+    g->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    g->setMaximumHeight(250);
+    graphs.push_back(g);
+    widget.cpuSumLayout->addWidget(g, 0);
+    
+    g = new CpuGraphWidget(DataSource::GPU, QColor(0xFF, 0x00, 0xe2, 0xff));
     g->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     g->setMaximumHeight(250);
     graphs.push_back(g);
@@ -61,6 +71,7 @@ MainForm::MainForm() {
     source = new DataSource();
     source->addProvider(new CpuProvider());
     source->addProvider(new RamProvider());
+    source->addProvider(new GpuProvider());
     for (int i = 0; i < CpuProvider::getNumberOfCores(); i++) {
         source->addProvider(new CpuProvider(i));
     }
@@ -76,6 +87,9 @@ MainForm::~MainForm() {
     graphs.clear();
 }
 
+/**
+ * Updates DataSource and updates graphs
+ */
 void MainForm::updateData() {
     source->update();
     for (unsigned int i = 0; i < graphs.size(); i++) {

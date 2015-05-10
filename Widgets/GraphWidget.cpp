@@ -10,10 +10,19 @@
 #include <QPainter>
 #include <QDebug>
 
+/**
+ * @param id Data id
+ * @param c Graph color
+ * @param divider Data is being divided by this (defaults to 1)
+ */
 GraphWidget::GraphWidget(Id id, QColor c, float divider) : id(id), color(c), divider(divider) {
     data = NULL;
 }
 
+/**
+ * Overridden paintEvent to draw the graph
+ * @param 
+ */
 void GraphWidget::paintEvent(QPaintEvent*) {
 
     //Set up painter

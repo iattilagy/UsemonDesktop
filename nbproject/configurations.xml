@@ -10,16 +10,13 @@
       <itemPath>Providers/CpuProvider.h</itemPath>
       <itemPath>DataEngine/Data.h</itemPath>
       <itemPath>DataEngine/DataSource.h</itemPath>
-      <itemPath>Providers/GpuFreqProvider.h</itemPath>
       <itemPath>Providers/GpuProvider.h</itemPath>
-      <itemPath>Providers/GpuRamFreqProvider.h</itemPath>
       <itemPath>Widgets/GraphWidget.h</itemPath>
       <itemPath>DataEngine/Id.h</itemPath>
       <itemPath>MainForm.h</itemPath>
       <itemPath>Providers/Provider.h</itemPath>
       <itemPath>Widgets/RamGraphWidget.h</itemPath>
       <itemPath>Providers/RamProvider.h</itemPath>
-      <itemPath>Providers/newClass.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -35,9 +32,7 @@
       <itemPath>Providers/CpuProvider.cpp</itemPath>
       <itemPath>DataEngine/Data.cpp</itemPath>
       <itemPath>DataEngine/DataSource.cpp</itemPath>
-      <itemPath>Providers/GpuFreqProvider.cpp</itemPath>
       <itemPath>Providers/GpuProvider.cpp</itemPath>
-      <itemPath>Providers/GpuRamFreqProvider.cpp</itemPath>
       <itemPath>Widgets/GraphWidget.cpp</itemPath>
       <itemPath>DataEngine/Id.cpp</itemPath>
       <itemPath>MainForm.cpp</itemPath>
@@ -45,7 +40,6 @@
       <itemPath>Widgets/RamGraphWidget.cpp</itemPath>
       <itemPath>Providers/RamProvider.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
-      <itemPath>Providers/newClass.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -105,17 +99,9 @@
       </item>
       <item path="Providers/CpuProvider.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Providers/GpuFreqProvider.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Providers/GpuFreqProvider.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Providers/GpuProvider.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Providers/GpuProvider.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Providers/GpuRamFreqProvider.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Providers/GpuRamFreqProvider.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Providers/Provider.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -124,10 +110,6 @@
       <item path="Providers/RamProvider.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Providers/RamProvider.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Providers/newClass.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Providers/newClass.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Widgets/CpuFreqGraphWidget.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -198,17 +180,9 @@
       </item>
       <item path="Providers/CpuProvider.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Providers/GpuFreqProvider.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Providers/GpuFreqProvider.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Providers/GpuProvider.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Providers/GpuProvider.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Providers/GpuRamFreqProvider.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Providers/GpuRamFreqProvider.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Providers/Provider.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -217,10 +191,6 @@
       <item path="Providers/RamProvider.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Providers/RamProvider.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Providers/newClass.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Providers/newClass.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Widgets/CpuFreqGraphWidget.cpp" ex="false" tool="1" flavor2="0">
       </item>

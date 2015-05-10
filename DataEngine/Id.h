@@ -10,6 +10,10 @@
 
 class Id {
 public:
+    /**
+     * @param p Primary id (type)
+     * @param s Secondary id (e.g. for cpu cores) defaults to 0
+     */
     Id(const int p, const int s = 0) {
         primary = p;
         secondary = s;
@@ -20,10 +24,18 @@ public:
         this->secondary = i.secondary;
     }
 
+    /**
+     * 
+     * @return Primary id
+     */
     int GetPrimary() const {
         return primary;
     }
 
+    /**
+     * 
+     * @return Secondary id
+     */
     int GetSecondary() const {
         return secondary;
     }

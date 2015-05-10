@@ -9,12 +9,14 @@
 #define	GPUPROVIDER_H
 
 #include "Provider.h"
+#include <string>
 
 class GpuProvider : public Provider{
 public:
     GpuProvider();
-private:
-
+    void update(Data * data);
+private:    
+    static std::string exec(const char* cmd);
 };
 
 #endif	/* GPUPROVIDER_H */

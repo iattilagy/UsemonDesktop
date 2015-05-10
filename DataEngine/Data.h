@@ -14,11 +14,19 @@ using namespace std;
 
 class Data {
 public:
-    const static int size = 100;
+    const static int size = 100; ///<Maximum size of the list
 
+    /**
+     * 
+     * @param id
+     */
     Data(Id id) : id(id) {
     }
 
+    /**
+     * 
+     * @param orig
+     */
     Data(const Data& orig) : id(orig.id) {
         this->datas = orig.datas;
     }
@@ -26,6 +34,10 @@ public:
     virtual ~Data() {
     };
 
+    /**
+     * Returns Data's id
+     * @return Id
+     */
     Id getId() const {
         return id;
     }
@@ -33,6 +45,9 @@ public:
     float getLastAdded() const;
     float getFirstAdded() const;
 
+    /**
+     * @return Real size of the list
+     */
     int getRealSize() const {
         return datas.size();
     }
@@ -43,10 +58,10 @@ public:
     float getNext() const;
     bool isAfterLast() const;    
 private:
-    Id id;
-    list<float> datas;
-    mutable list<float>::const_iterator iterator;
-    mutable bool last;
+    Id id; ///<Id sets datatype
+    list<float> datas; ///<The list we store things in
+    mutable list<float>::const_iterator iterator; ///<Iterator to get list elements
+    mutable bool last; ///<Last is true if iterator is overrun
 };
 
 #endif	/* DATA_H */

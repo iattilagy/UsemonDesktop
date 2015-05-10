@@ -15,6 +15,10 @@ RamGraphWidget::RamGraphWidget(QColor c) :
 GraphWidget(DataSource::RAM, c, RamProvider::getRamTotal()) {
 }
 
+/**
+ * @param data Current value
+ * @return Ram formatted string
+ */
 QString RamGraphWidget::getText(float data) {
     QString temp = "";
     temp.sprintf("%dMB", int(data / 1000));

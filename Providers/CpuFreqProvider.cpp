@@ -14,6 +14,10 @@
 
 using namespace std;
 
+/**
+ * 
+ * @param core Core id
+ */
 CpuFreqProvider::CpuFreqProvider(int core) {
     id = new Id(DataSource::CPU_FREQ, core);
 }
@@ -21,7 +25,7 @@ CpuFreqProvider::CpuFreqProvider(int core) {
 
 /**
  * Value in data will be in Mhz
- * @param data
+ * @param data Data to update
  */
 void CpuFreqProvider::update(Data* data) {
     ostringstream ss;
@@ -40,6 +44,9 @@ void CpuFreqProvider::update(Data* data) {
     data->update(freq/1000);    
 }
 
+/**
+ * @return Maximum cpu frequency in Mhz
+ */
 float CpuFreqProvider::getMaxFreq(){
     ifstream infile("/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq");
     if (!infile.is_open()) {
